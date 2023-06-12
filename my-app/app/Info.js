@@ -4,6 +4,9 @@ import StarIcon from "../assets/star.svg"
 import MailIcon from "../assets/mail.svg"
 import DocsIcon from "../assets/docs.svg"
 import PdfIcon from "../assets/pdf.svg"
+import WWW from "../assets/www.svg"
+import Insta from "../assets/insta.svg"
+import Facebook from "../assets/face.svg"
 
 const Info = () => {
   return (
@@ -34,10 +37,16 @@ const Info = () => {
           <Text style={styles.text}>Pobierz instrukcję obsługi poduszki PDF</Text>
         </View>
 
-        <View style={{flexDirection: "row", gap: 20, marginTop: 40, justifyContent: 'center' }}>
-          <View><Text style={{color: "#ccc"}}>WWW</Text></View>
-          <View><Text style={{color: "#ccc"}}>Instagram</Text></View>
-          <View><Text style={{color: "#ccc"}}>Facebbok</Text></View>
+        <View style={{flexDirection: "row", gap: 30, marginTop: 40, justifyContent: 'center', alignItems: 'center' }}>
+          <View>
+            <WWW width={40} height={40} fill="white"/>
+          </View>
+          <View>
+            <Facebook width={35} height={35} fill="white" />
+          </View>
+          <View>
+            <Insta width={45} height={45} fill="white" />
+          </View>
         </View>
 
       </View>
@@ -48,6 +57,7 @@ const Info = () => {
 const styles = StyleSheet.create({
   wrapper: {
     padding: 10,
+    paddingTop: 40
   },
   text: {
     color: '#eee',
@@ -55,9 +65,10 @@ const styles = StyleSheet.create({
     marginLeft: 10
   },
   link: {
-    marginBottom: 15,
+    marginBottom: 20,
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
+    paddingRight: 10,
   }
 
 })

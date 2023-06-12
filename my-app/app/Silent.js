@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import MainView from "../components/MainView";
 import { View, Text, ImageBackground, StyleSheet } from 'react-native';
 import Swiper from 'react-native-swiper';
-import TimerIcon from '../assets/timer.svg'
 import Timer2Icon from '../assets/timer2.svg'
 import Play from '../assets/play.svg'
 import Stop from '../assets/stop.svg'
@@ -16,7 +15,6 @@ const Silent = () => {
 
   return (
     <MainView title="Wycisz się">
-
       <Swiper
         loop={false}
         onIndexChanged={handleIndexChanged}
@@ -52,14 +50,7 @@ const Silent = () => {
         }}
       >
         <View style={styles.container}>
-          <ImageBackground source={require('../assets/bg1.jpg')} style={styles.backgroundImage}>
-            <Timer2Icon width={40} fill="white" style={styles.timer}/>
-            <Play  width={120} height={120} fill="white"/>
-          </ImageBackground>
-        </View>
-        <View style={styles.container}>
           <ImageBackground source={require('../assets/bg2.jpg')} style={styles.backgroundImage}>
-            {/*<Timer2Icon width={40} height={40} fill="white" style={styles.timer}/>*/}
             <Text style={styles.timer}>14s</Text>
             <Stop width={120} height={120} fill="white"/>
           </ImageBackground>
@@ -72,6 +63,12 @@ const Silent = () => {
         <View style={styles.container}>
           <ImageBackground source={require('../assets/bg4.jpg')} style={styles.backgroundImage}>
             {/* Your content here */}
+          </ImageBackground>
+        </View>
+        <View style={styles.container}>
+          <ImageBackground source={require('../assets/bg1.jpg')} style={styles.backgroundImage}>
+            <Timer2Icon width={40} fill="white" style={styles.timer}/>
+            <Play width={120} height={120} fill="white"/>
           </ImageBackground>
         </View>
       </Swiper>

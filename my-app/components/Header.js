@@ -3,9 +3,10 @@ const Header = ({title, visible}) => {
   if(visible) {
     return (
       <Stack.Screen options={{
-        headerStyle: { backgroundColor: '#393053' },
+        headerStyle: { backgroundColor: '#192f6a' },
         headerTitle: title,
-        headerTitleStyle: { color: '#eee' }
+        headerTitleStyle: { color: '#eee' },
+        headerTintColor: 'white'
       }}/>
     )
   } else {

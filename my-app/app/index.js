@@ -60,11 +60,11 @@ const styles = StyleSheet.create({
   mainContent: {
     flex: 1,
     alignItems: "center",
-    paddingTop: 60
+    paddingTop: 60,
   },
   poduszka: {
     marginTop: 0,
-    position: 'relative'
+    position: 'relative',
   },
   poduszkaOn: {
     color: 'lightgreen',
@@ -80,17 +80,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 20,
     borderStyle: 'solid',
-    borderWidth: 3,
-    borderColor: '#443C68',
     color: '#eee',
     width: '50%',
     marginLeft: 'auto',
     marginRight: 'auto',
     padding: 10,
-    backgroundColor: '#443C68',
+    backgroundColor: '#4c669f',
 
     shadowColor: 'black', // Shadow color
-    shadowOpacity: 0.5, // Shadow opacity (0 to 1)
+    shadowOpacity: 0.3, // Shadow opacity (0 to 1)
     shadowOffset: { width: 2, height: 4 }, // Shadow offset
     shadowRadius: 4, // Shadow blur radius
     elevation: Platform.OS === 'android' ? 4 : 0,
